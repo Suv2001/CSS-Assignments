@@ -6,6 +6,7 @@
 
 body{
     width: 100%;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(201, 215, 235);
 }
@@ -46,7 +47,7 @@ body{
     padding-top: 21px;
     
 }
-#input input{
+#input input {
     width: 150px;
     height: 20px;
     border: 1px solid darkblue;
@@ -60,16 +61,16 @@ button{
     
 }
 
-a{
-    color: white;
+#fp{
+    color: rgba(221, 217, 217, 0.519);
     text-decoration: none;
-    opacity: 0.5;
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 0.2px;
-    position: absolute;
-    padding-left: 69.5%;
-    padding-top: 48px;
+    letter-spacing: 0.2px;    
+    margin-top: 100px;
+    margin-left: 44%;
+   
+    
 }
 
 #div1{
@@ -125,96 +126,129 @@ a{
 }
 
 
-#div2input {
-    width: 80%;
-    position: absolute;
-    padding-left: 6.5%;
-    padding-top: 15%;
-    
-}
-
-#div2input input{
-   width: 160px;
-   height: 30px;
-   border: 0.3px solid rgb(153, 153, 160);
-   border-radius: 5px;
-}
-
-#input1{
-    margin-left: 13px; 
-}
-
-#mobile-no{
-    width: 80%;
-    position: absolute;
-    padding-left: 6.5%;
-    padding-top: 21%;
-      
-}
-#mobile-no input{
-    width: 340px;
+#firstname {
+    width: 160px;
     height: 30px;
     border: 0.3px solid rgb(153, 153, 160);
     border-radius: 5px;
-}
-
-
-#password{
-    width: 80%;
     position: absolute;
-    padding-left: 6.5%;
-    padding-top: 27%;
-      
+    margin-left: 6.5%;
+    margin-top: 15%;
+    
 }
-#password input{
-    width: 340px;
+#lastname {
+    width: 160px;
     height: 30px;
     border: 0.3px solid rgb(153, 153, 160);
     border-radius: 5px;
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 15%;
+
+}
+
+#mobile-no {
+    width: 335px;
+    height: 30px;
+    border: 0.3px solid rgb(153, 153, 160);
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 6.5%;
+    margin-top: 20%;
+}
+#newpassword{
+    width: 335px;
+    height: 30px;
+    border: 0.3px solid rgb(153, 153, 160);
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 6.5%;
+    margin-top: 25%;
 }
 
 
-#birthday{
-    font-size:19px;
-    width: 1000px;
-    
-    position: absolute;
+#birthday {
+    font-size: 19px;
     display: block;
-    word-spacing: -0.8px;
-    padding-left: 50px;
-    padding-top: 34%;
-
+    margin-top: 240px;
+    padding-left: 48px;
 }
 
 #date{
-    width: 80%;
+    width: 55px;
+    height: 28px;
+
+    background-color: rgb(217, 217, 228);
+    border: 0.3px solid rgb(153, 153, 160);
     position: absolute;
-    padding-left: 6.5%;
-    padding-top: 37%;
+    display: inline-block;
+    margin-left: 6.5%;
+    margin-top: 1.5%;
 }
 
-#gender{
-    margin-top: 20px;
+
+#months{
+    width: 55px;
+    height: 28px;
+    background-color: rgb(217, 217, 228);
+    border: 0.3px solid rgb(153, 153, 160);
+    position: absolute;
+    display: inline-block;
+    margin-left: 14.5%;
+    margin-top: 1.5%;
 }
-#gender input{
-    border: none;
+
+#year{
+    width: 55px;
+    height: 28px;
+    background-color: rgb(217, 217, 228);
+    border: 0.3px solid rgb(153, 153, 160);
+    position: absolute;
+    display: inline-block;
+    margin-left: 22.5%;
+    margin-top: 1.5%;
+
 }
+#why {
+    width: 180px;
+    height: 28px;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 240px;
+}
+#gender {
+    padding-top: 15px;
+    padding-left: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+#gender span{
+    padding-left: 7PX;
+}
+#female{
+    margin-left: 15px;
+}
+
+
+
+
 
  pre{
     margin-top: 10px;
-    font-size: smaller;
+    margin-left:5px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#female{
-    margin-left: 10px;
-}
 
 #account{
- margin-top: 35px;   
+ margin-top: 35px;
 }
 
-#account input{
+#button {
     width: 180px;
     height: 30px;
     border: 0.3px solid rgb(153, 153, 160);
@@ -223,17 +257,29 @@ a{
     font-weight: bold;
     color: white;
     background-color: rgb(102, 160, 55);
+    margin-left: 40px;
 }
 
-#create{
-    margin-top: 30x; 
-    margin-left: 20px;  
-}
+
 #account span{
     color: rgb(38, 97, 170);
     font-size: 15px;
     text-decoration: underline;
 }
-#account p{
-    font-size: smaller;
+ #p{
+     width: 300px;
+     height: 28px;
+     font-size: 13px;
+     display: inline-block;
+     vertical-align: top;
+     margin-left: 40px;
+     margin-top: 10px;
+
+
 }
+ #p a{
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+    color: darkblue;
+ }
