@@ -1,0 +1,185 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+#anchar {
+    display: inline-block;
+    margin-left: 35%;
+}
+
+a {
+    font-size: 25px;
+    margin-left: 1%;
+    padding-top: 10px;
+    text-decoration: none;
+    padding-left: 15px;
+    color: #232020;
+}
+
+#more {
+    color: darkblue;
+}
+
+#inputarea {
+    height: 150px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.input {
+    width: 100%;
+    height: 60px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.input::placeholder {
+    font-size: 35px;
+    opacity: 0.6;
+}
+
+#password {
+    margin-top: 80px;
+}
+
+#login\ button {
+    border: none;
+    margin-top: 50px;
+    height: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: 90;
+    background-color: #2d4a84;
+    border-radius: 5px;
+}
+
+#forgot-password {
+    display: flex;
+    font-size: 35px;
+    margin-top: 40px;
+    padding-left: 5px;
+    color: darkblue;
+    padding-left: 30%;
+}
+
+fieldset {
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width: 70%;
+    height: 60px;
+    padding-top: 30px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+fieldset::before,
+fieldset::after {
+    content: " ";
+    flex-grow: 6;
+    margin-bottom: 10px;
+}
+
+fieldset legend {
+    text-align: center;
+    font-size: 30px;
+    background-color: #fff;
+    position: relative;
+    z-index: -1;
+    border-bottom: none;
+}
+
+legend::before,
+legend::after {
+    content: " ";
+    width: 10px;
+    display: inline-block;
+}
+
+#div1 {
+    margin-top: 80px;
+    display: grid;
+    align-items: center;
+    place-items: center;
+}
+
+#create_Account {
+    border: none;
+    margin-top: 50px;
+    height: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: 90;
+    background-color: #008000;
+    border-radius: 5px;
+    padding: auto;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #anchar {
+        margin-left: 20%;
+    }
+    #inputarea {
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #password {
+        margin-top: 40px;
+    }
+    #login button {
+        margin-top: 30px;
+    }
+    #forgot-password {
+        padding-left: 20%;
+    }
+    fieldset {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #anchar {
+        margin-left: 10%;
+    }
+    #inputarea {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #password {
+        margin-top: 20px;
+    }
+    #login button {
+        margin-top: 20px;
+    }
+    #forgot-password {
+        padding-left: 10%;
+    }
+    fieldset {
+        width: 95%;
+    }
+}
